@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>Note Paddy</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+         <link rel="icon" type="image/x-icon" href="assets/images/icons8-notepad-color-32.png"/>
+    
+    <!-- CSS -->
+
+        <!-- bootstrap.min css -->
+        <link rel="stylesheet" href="assets/css/bootstrap/css/bootstrap.min.css">
+
+        <!-- Main Stylesheet -->
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <!-- Fontawesome CSS -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+             integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- ============================-->
+</head>
+
+<body>
+  <nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Note Paddy
+    </a>
+    <div class="icons">
+      <i class="fas fa-save text-light save-note"></i>
+      <i class="fas fa-pen text-light new-note"></i>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-4 list-container">
+        <div class="card">
+          <ul class="list-group">
+          </ul>
+        </div>
+      </div>
+      <div class="col-8">
+        <input class="note-title" placeholder="Note Title" maxlength="28" type="text">
+        <textarea class="note-textarea" placeholder="Note Text"></textarea>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript-->
+    <!--jquery-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--main script-->
+      <script src="assets/js/myscript.js"></script>
+
+</body>
+
+</html>
