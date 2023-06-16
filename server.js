@@ -49,7 +49,7 @@ app.get("/notes", function (req, res) {
 //===============================================================================
 
 // Since the GET and POST functions grab from the same route, we can set it once up here.
-app.route("/api/notes")
+app.route("api/notes")
     // Grab the notes list (this should be updated for every new note and deleted note.)
     .get(function (req, res) {
         res.json(database);
@@ -57,16 +57,18 @@ app.route("/api/notes")
 
     // Add a new note to the json db file.
     .post(function (req, res) {
-        let jsonFilePath = path.join(__dirname, "/db/db.json");
+        let jsonFilePath = path.join(__dirname, "db/db.json");
         let newNote = req.body;
 
         // This allows the test note to be the original note.
         let highestId = 99;
+
         // This loops through the array and finds the highest ID.
         for (let i = 0; i < database.length; i++) {
             let individualNote = database[i];
 
             if (individualNote.id > highestId) {
+                
                 // highestId will always be the highest numbered id in the notesArray.
                 highestId = individualNote.id;
             }
