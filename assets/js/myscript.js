@@ -19,25 +19,25 @@ $(document).ready(function() {
       var note = notes[i];
       var listItem = $('<li class="list-group-item"></li>').text(note.title);
   
-      // Add data attribute to store the note index
+  // Add data attribute to store the note index
       listItem.attr('data-index', i);
   
-      // Create delete button
-      var deleteButton = $('<i class="fas fa-trash-alt float-right text-danger ml-5">');
+  // Create delete button
+      var deleteButton = $('<i class="fas fa-trash-alt float-right text-danger ">');
       deleteButton.attr('data-index', i);
   
-      // Add click event listener to delete button
+  // Add click event listener to delete button
       deleteButton.click(function(e) {
         e.stopPropagation();
         var index = $(this).attr('data-index');
         deleteNoteByIndex(index);
       });
   
-      // Append delete button to list item
+  // Append delete button to list item
       listItem.append(deleteButton);
   
       listItem.click(function() {
-        // Toggle active class for selected item
+    // Toggle active class for selected item
         $('.list-group-item').removeClass('active');
         $(this).addClass('active');
   
@@ -56,7 +56,7 @@ $(document).ready(function() {
     $('.note-textarea').val(note.text);
   }
 
-
+//function to update save icon visibilitty
   function updateSaveNoteVisibility() {
     var title = $('.note-title').val();
     var text = $('.note-textarea').val();
@@ -69,7 +69,7 @@ $(document).ready(function() {
     }
   }
 
-// A Function to open new note/ clear / update save icon visibilitty
+// A Function to open new note/ clear note
   function clearNote() {
     $('.note-title').val('');
     $('.note-textarea').val('');

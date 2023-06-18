@@ -1,5 +1,5 @@
 # Note-paddy
- A Note Taking App  built for revocube tech that can be used to create, save, and delete notes. It will retrieve note data from a local storage file built with bootstrap, css and javascript.
+ A Note Taking App  built for revocube tech that can be used to create, save, and delete notes. It will retrieve note data from a local storage file built with html, css and javascript.
 
 
 ## other Context
